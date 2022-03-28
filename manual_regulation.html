@@ -12,7 +12,8 @@
 <body>
         <nav class="navbar navbar-expand-md">
             <a class="navbar-brand" href="#">
-                <img src="/ressources/logo.png" alt="" width="80" height="80"></a>
+                <img src="/ressources/logo.png" alt="" width="40" height="40"></a>
+                <h1>B.I.R.D.</h1>
             <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -31,31 +32,41 @@
             </div>
         </nav>
 
-    <div class="container-liquid mt-2 text-center ">
+    <div class="container-liquid mt-1 text-center ">
         <div class="row align-items-start">
             <div class="col">
-            <div class="card m-1">
-            <div class="card-body">
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                    <label class="form-check-label" for="flexRadioDefault1">
-                        Bleed flow regulation method
-                    </label>
+                <div class="card m-1">
+                <div class="card-body">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Bleed flow regulation method
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                        Interval opening regulation method
+                        </label>
+                    </div>
                 </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                    <label class="form-check-label" for="flexRadioDefault2">
-                    Interval opening regulation method
-                    </label>
                 </div>
             </div>
+                <div class="col">
+                    <div class="card m-1">
+                    <div class="card-body">
+                        <label for="customRange1 " class="form-label">Valve sensitivity</label>
+                        <input type="range" class="form-range " id="customRange1">
+                        </div>
+                    </div>
+
         </div>
         
 
 
     <div class="card m-1 ">
         <div class="col">
-            <div class="card-body">
+            <div class="card-body m-1">
             <!-- Button to Open the Modal -->
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
             Valve shutdown Override
@@ -65,8 +76,8 @@
     </div>
 
 
-            </div>
- 
+            
+        </div>
 
 
 
