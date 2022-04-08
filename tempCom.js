@@ -13,12 +13,16 @@ document.getElementById("primaryTemp").innerHTML = primaryTemp + "°C";
 document.getElementById("secondaryTemp").innerHTML = secondaryTemp + "°C";
 document.getElementById("deltaTemp").innerHTML = deltaTemp+ "°C";
 
+var rld = document.getElementById("reload");
+
 $(document).ready(function(){
 
     $("#primaryProg").css("width", primaryPercent + "%").text(primaryTemp + "°C");
     $("#secondaryProg").css("width", secondaryPercent + "%").text(secondaryTemp + "°C");
   
   });
+
+
 
 function tempToPercent(temp,mintemp,maxtemp){
     let percent;
