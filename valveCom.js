@@ -1,12 +1,12 @@
 let valveOpen = 0;
-// document.getElementById("valveOpening").innerHTML = valveOpen+ "%";
 
-// $(document).ready(function(){
 
-//     $("#valveProg").css("width", valveOpen + "%").text(valveOpen + "%");
 
-  
-//   });
+
+
+
+
+
 
 var rld = document.getElementById("reload");
 
@@ -14,11 +14,12 @@ rld.onclick = fetchData;
 
 fetchData();
 
-// var intervalId = window.setInterval(function(){
-//   fetchData();
-// }, 5000);
+
+
 
 function fetchData(){
+  // Here this function fetches using the "get" method the data from the sheet
+  // NOTE: we use an api shortener calle "nocodeapi" to simplify our endpoints
   var settings = {
     "url": "https://v1.nocodeapi.com/nataro76/google_sheets/tcVxuScuSuwxfQHy?tabId=arduinoData&row_id=2",
     "method": "get",
